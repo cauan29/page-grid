@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+:root {
+    --Moderateviolet: hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 89vh;
+    width: 90vw;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Lightgrayishblue);
+}
+
+section.lwrapper {
+    display: grid;
+    position: relative;
+    grid-template-columns: 200px 150px 150px 200px 150px;
+    grid-template-rows: repeat(3, 265px);
+    grid-gap: 1.5rem;
+    height: 400px;
+    margin-left: 160px;
+    margin-top: 50px;
+
+    grid-template-areas: 
+    "box1 box1 box1 box2 aside"
+    "box3 box4 box4 box4 aside"
+    ;
+}
+
+.lwrapper__box1 {
+    position: relative;
+    background-color: var(--Moderateviolet);
+    grid-area: box1;
+    border-radius: 8px;
+}
+
+.lwrapper__box1_filho {
+    padding: 30px;
+    padding-bottom: 20px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 390px;
+}
+
+.lwrapper__box1_filho > img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.712);
+    height: 30px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.lwrapper__box1_filho > h3 {
+    position: absolute;
+    top: 27px;
+    left: 80px;
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 0.705);
+    font-weight: 500;
+}
+
+.lwrapper__box1_filho > p.dp1 {
+    position: absolute;
+    top: 48px;
+    left: 80px;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-weight: 500;
+}
+
+.lwrapper__box1_filho > p.dp2 {
+    margin: 15px 0px;
+    font-size: 18px;
+    color: var(--White);
+    font-weight: 500;
+    text-align: left;
+}
+
+.lwrapper__box1_filho > p.dp3 {
+    position: absolute;
+    top: 162px;
+    left: 30px;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.363);
+}
+
+.lwrapper__box2 {
+    background-color: var(--Verydarkgrayishblue);
+    grid-area: box2;
+    border-radius: 5px;
+}
+
+.lwrapper__box2_filho {
+    position: relative;
+    padding: 30px;
+}
+
+.lwrapper__box2_filho > img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.lwrapper__box2_filho > h4 {
+    position: absolute;
+    top: 13px;
+    left: 59px;
+    font-size: 13px;
+    color: hsla(0, 0%, 100%, 0.568);
+    font-weight: 500;
+}
+
+.lwrapper__box2_filho > p.dpp1 {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-size: 9px;
+    color: hsla(0, 0%, 100%, 0.616);
+}
+
+.lwrapper__box2_filho > p.dpp2 {
+    position: absolute;
+    top: 47px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+}
+
+.lwrapper__box2_filho > p.dpp3 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.603);
+}
+
+.lwrapper__box3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: box3;
+    border-radius: 8px;
+}
+
+.lwrapper__box3_filho {
+    position: relative;
+    padding: 30px;
+}
+
+.lwrapper__box3_filho > img {
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.lwrapper__box3_filho > h4 {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.lwrapper__box3_filho > p.dpppp1 {
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    font-size: 12px;
+    color: hsl(0, 9%, 73%);
+}
+
+.lwrapper__box3_filho > p.dpppp2 {
+    position: absolute;
+    top: 65px;
+    left: 26px;
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(217, 19%, 35%);
+    margin-right: 20px;
+}
+
+.lwrapper__box3_filho > p.dpppp3 {
+    position: absolute;
+    top: 150px;
+    left: 26px;
+    font-size: 12px;
+    color: hsla(217, 19%, 35%, 0.753);
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.lwrapper__box4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: box4;
+    border-radius: 8px;
+}
+
+.lwrapper__box4_filho {
+    position: relative;
+    padding: 30px;
+}
+
+.lwrapper__box4_filho > img {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 2px purple;
+}
+
+.lwrapper__box4_filho > h4 {
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    font-size: 13px;
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+}
+
+.lwrapper__box4_filho > p.dppppp1 {
+    position: absolute;
+    top: 42px;
+    left: 80px;
+    font-size: 11px;
+    color: hsla(0, 0%, 81%, 0.664);
+    font-weight: 500;
+}
+
+.lwrapper__box4_filho > p.dppppp2 {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(210, 46%, 95%);
+    margin-right: 20px;
+    line-height: 22px;
+}
+
+.lwrapper__box4_filho > p.dppppp3 {
+    position: absolute;
+    top: 165px;
+    left: 30px;
+    font-size: 13px;
+    color: hsla(210, 46%, 95%, 0.644);
+}
+
+.lwrapper__aside {
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    border-radius: 8px;
+    grid-area: aside;
+    height: 554px;
+    width: 240px;
+}
+
+.lwrapper__aside_filho {
+    position: relative;
+    padding: 30px;
+}
+
+.lwrapper__aside_filho > img {
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: -6px;
+    left: -1px;
+}
+
+.lwrapper__aside_filho > h4 {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+    font-size: 13px;
+    color: var(--Verydarkgrayishblue);
+    font-weight: 500;
+}
+
+.lwrapper__aside_filho > p.dppp1 {
+    position: absolute;
+    top: 42px;
+    left: 70px;
+    font-size: 11px;
+    color: hsl(0, 9%, 73%);
+    font-weight: 500;
+}
+
+.lwrapper__aside_filho > p.dppp2 {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsla(217, 19%, 35%, 0.884);
+}
+
+.lwrapper__aside_filho > p.dppp3 {
+    position: absolute;
+    top: 155px;
+    left: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsla(217, 19%, 35%, 0.884);
+    margin-right: 25px;
+    line-height: 17px;
+}
+
+.attribution { font-size: 11px; text-align: center; display: none;}
+.attribution a { color: hsl(228, 45%, 44%); display: none;}
